@@ -6,15 +6,16 @@ module.exports = {
   theme: 'reco',
   head: [
     ['link', {rel: 'icon', href: '/img/favicon.ico'}],
+    ['script', {type: 'text/javascript', src: 'https://lib.baomitu.com/echarts/4.9.0-rc.1/echarts.js'}],
     /*['script', {type: 'text/javascript', src: 'https://cdn.jsdelivr.net/gh/bmob/hydrogen-js-sdk@2.2.3/dist/Bmob-2.2.3.min.js'}]*/
   ],
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
   plugins: [
-    [require('./plugins/vuepress-plugin-sakana'), {
+    /*[require('./plugins/vuepress-plugin-sakana'), {
       scale: .5
-    }],
+    }],*/
     // 全局组件
     /*['@vuepress/register-components', {
       // componentsDir: './components'
@@ -29,7 +30,7 @@ module.exports = {
     }],*/
     [
       '@vuepress/last-updated',
-      {
+      /*{
         transformer: (timestamp, lang) => {
           // 不要忘了安装 moment
           // moment 时间格式化文档戳这里 http://momentjs.cn/
@@ -37,7 +38,7 @@ module.exports = {
           moment.locale(lang)
           return moment(timestamp).fromNow()
         }
-      }
+      }*/
     ],
     //https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/features/plugin-options.html
     /*["vuepress-plugin-auto-sidebar", {
@@ -123,32 +124,6 @@ module.exports = {
         cover: false,
       }
     }],
-    //樱花特效
-    /*["sakura", {
-      num: 20,  // 默认数量
-      show: true, //  是否显示
-      zIndex: -1,   // 层级
-      img: {
-        replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
-        httpUrl: '...'     // 绝对路径
-      }
-    }]*/
-    /*[
-      'vuepress-plugin-rss',
-      {
-        base_url: '/', // required
-        site_url: 'https://an9wer.github.io/blog.html', // required
-        copyright: '2018 Young Tailors', // optional
-        // filter some post
-        filter: (frontmatter) => { return true },
-        // How much articles
-        count: 20
-      }
-    ]*/
-    /*["vuepress-plugin-live2d", { //z16，Epsilon2.1，izumi，koharu，shizuku，miku, hijiki, tororo
-      "modelName": "shizuku", //https://huaji8.top/post/live2d-plugin-2.0/
-      "mobileShow": false
-    },]*/
   ],
   configureWebpack: {
     resolve: {

@@ -21,13 +21,16 @@ function match (
 ```
 
 ## 3、修复全局查询问题
+**fixed**  
 - 3-1 删除主题变换按钮
 - 目录`docs/.vuepress/theme/components/Mode/index.vue`
-  注释`class="color-button"`的元素
+   注释`class="color-button"`的元素
 - 3-2 修复查询问题
   目录`node_modules/@vuepress/plugin-search/match-query.js`
-  if (get(page, 'frontmatter.tags')) {
+  ```js
+    if (get(page, 'frontmatter.tags')) {
     if(Array.isArray(page.frontmatter.tags)){
-      domain += ` ${page.frontmatter.tags.join(' ')}`
+    domain += ` ${page.frontmatter.tags.join(' ')}`
     }
-  }
+    }
+  ```
