@@ -30,7 +30,7 @@ module.exports = {
     }],*/
     [
       '@vuepress/last-updated',
-      /*{
+      {
         transformer: (timestamp, lang) => {
           // 不要忘了安装 moment
           // moment 时间格式化文档戳这里 http://momentjs.cn/
@@ -38,7 +38,7 @@ module.exports = {
           moment.locale(lang)
           return moment(timestamp).fromNow()
         }
-      }*/
+      }
     ],
     //https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/features/plugin-options.html
     /*["vuepress-plugin-auto-sidebar", {
