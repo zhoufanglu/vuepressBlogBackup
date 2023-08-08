@@ -2,6 +2,7 @@
 title: 我的行李箱
 categories: 随笔  
 tags: [随笔]
+date: 2023-08-08
 ---
 
 ## 出生

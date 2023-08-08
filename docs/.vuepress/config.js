@@ -1,4 +1,6 @@
 const nav = require("./nav.js"); // 引入刚刚生成的文件
+const moment = require('moment');
+
 module.exports = {
   title: 'lufangzhou',
   description: '记录平凡的代码人生',
@@ -30,15 +32,15 @@ module.exports = {
     }],*/
     [
       '@vuepress/last-updated',
-      {
+      /*{
         transformer: (timestamp, lang) => {
+          console.log(37, timestamp)
           // 不要忘了安装 moment
           // moment 时间格式化文档戳这里 http://momentjs.cn/
-          const moment = require('moment')
           moment.locale(lang)
           return moment(timestamp).fromNow()
         }
-      }
+      }*/
     ],
     //https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/features/plugin-options.html
     /*["vuepress-plugin-auto-sidebar", {
