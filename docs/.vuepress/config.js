@@ -214,6 +214,10 @@ module.exports = {
         title: 'Chereby',
         link: 'http://www.chereby.com/'
       },
+      {
+        "title": "申请添加",
+        "link": "https://github.com/zhoufanglu/vuepressBlog/issues"
+      },
     ]
     /*sidebar: {
       '/code/': [
