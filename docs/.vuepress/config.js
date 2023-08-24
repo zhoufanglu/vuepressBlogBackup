@@ -8,7 +8,6 @@ module.exports = {
   theme: 'reco',
   head: [
     ['link', {rel: 'icon', href: '/img/favicon.ico'}],
-    ['link', {rel: 'stylesheet', href: '/styles/google_font.css'}],
     ['script', {type: 'text/javascript', src: 'https://lib.baomitu.com/echarts/4.9.0-rc.1/echarts.js'}],
     /*['script', {type: 'text/javascript', src: 'https://cdn.jsdelivr.net/gh/bmob/hydrogen-js-sdk@2.2.3/dist/Bmob-2.2.3.min.js'}]*/
   ],
