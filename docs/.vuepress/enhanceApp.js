@@ -1,6 +1,5 @@
-/*
 import ViLike from 'vilike'
-// import Bmob from "hydrogen-js-sdk/dist/Bmob-2.2.4.min";
+import Bmob from "hydrogen-js-sdk/dist/Bmob-2.2.4.min";
 // import Sakana from 'sakana';
 // 使用异步函数也是可以的
 export default ({
@@ -11,7 +10,7 @@ export default ({
                   //isServer // 当前应用配置是处于 服务端渲染 或 客户端
                 }) => {
   // ...做一些其他的应用级别的优化
-  /!*Vue.mixin({
+  /*Vue.mixin({
     mounted() {
       if(!document.querySelector('#sakanaElement')){
         const el = document.createElement('div')
@@ -27,7 +26,7 @@ export default ({
         // console.log('1', document.querySelector('#sakanaElement'))
       }
     }
-  })*!/
+  })*/
   Vue.use(ViLike)
 }
 // 请自行修改相关配置信息
@@ -42,4 +41,3 @@ ViLike.configure({
 // 初始化
 ViLike.init();
 
-*/

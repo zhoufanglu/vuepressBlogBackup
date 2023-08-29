@@ -97,6 +97,7 @@ module.exports = {
       }
     }],
     // 音乐插件
+/*
     ['meting', {
       //metingApi: "https://meting.sigure.xyz/api/music",
       meting: {
@@ -126,6 +127,7 @@ module.exports = {
         cover: false,
       }
     }],
+*/
   ],
   configureWebpack: {
     resolve: {
@@ -213,6 +215,11 @@ module.exports = {
       {
         title: 'Chereby',
         link: 'http://www.chereby.com/'
+      },
+      {
+        title: 'RE1IFE\'s Blog',
+        link: 'http://www.re1ife.top',
+        logo: "https://re1ife.oss-cn-chengdu.aliyuncs.com/media/re1ife-site.ico",
       },
       {
         "title": "申请添加",
