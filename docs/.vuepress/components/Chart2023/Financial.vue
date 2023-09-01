@@ -7,7 +7,7 @@
 export default {
   name: '',
   components: {},
-  props: ['name'],
+  props: ['data'],
   data() {
     return {
       options: [],
@@ -16,10 +16,10 @@ export default {
   created() {
   },
   mounted() {
-    console.log(20, this.name)
+    console.log(20, this.data)
     const options = {
       title: {
-        text: '收人/支出统计',
+        text: '投资',
         textStyle: {
           color: 'white' // 设置标题文字颜色为白色
         }
@@ -28,7 +28,7 @@ export default {
         trigger: 'axis'
       },
       legend: {
-        data: ['收入', '支出', '理财'],
+        data: ['投入', '收益'],
         textStyle: {
           color: 'white' // 设置图例文字颜色为白色
         }
@@ -47,7 +47,7 @@ export default {
       xAxis: {
         type: 'category',
         boundaryGap: false,
-        data: ['1', '2', '3', '4', '5', '6', '7','8', '9', '10', '11', '12'],
+        data: this.data.date,
         axisLabel: {
           color: 'white' // 设置 x 轴文字颜色为白色
         },
@@ -68,33 +68,28 @@ export default {
       },
       series: [
         {
-          name: '收入',
+          name: '投入',
           type: 'line',
           stack: 'Total',
-          data: []
+          data: this.data.in
         },
         {
-          name: '支出',
+          name: '收益',
           type: 'line',
           stack: 'Total',
-          data: [15080, 901, 8758, 12894, 9814, 4869, 3740],
+          data: this.data.out,
           label: {
             show: true,      // 显示数据标签
             position: 'top', // 数据标签显示在折线顶部
-            color: 'yellow'   // 数据标签文字颜色为白色
+            color: 'yellow',   // 数据标签文字颜色为白色
+            offset: [-10, -10]
           },
           lineStyle: {
-            color: 'white',  // 设置折线颜色为白色
+            color: '#eeeeee',  // 设置折线颜色为白色
             width: 2,        // 设置折线宽度为2
             type: 'solid'    // 设置折线为实线，可选的值还有 'dashed' 虚线和 'dotted' 点线
           },
         },
-        {
-          name: '理财',
-          type: 'line',
-          stack: 'Total',
-          data: []
-        }
       ]
     };
 
