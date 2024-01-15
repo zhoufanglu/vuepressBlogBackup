@@ -3,7 +3,7 @@ autoGroup-javascript: javascript
 title: js工具类 
 categories: 语言
 tags: [javascript]
-sticky: 1
+sticky: 10
 --- 
 
 <Meta/>   
