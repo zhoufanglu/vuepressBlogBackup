@@ -222,6 +222,11 @@ module.exports = {
         logo: "https://re1ife.oss-cn-chengdu.aliyuncs.com/media/re1ife-site.ico",
       },
       {
+        "title": "Xiaojun Zhou",
+        "logo": "https://www.xiaojun.im/avatar.jpg",
+        "link": "https://xiaojun.im"
+      },
+      {
         "title": "申请添加",
         "link": "https://github.com/zhoufanglu/vuepressBlog/issues"
       },
