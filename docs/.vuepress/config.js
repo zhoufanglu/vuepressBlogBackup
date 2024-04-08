@@ -151,7 +151,7 @@ module.exports = {
     },*/
     //nav,
     nav: [
-      {text: '首页', link: '/'},
+      {text: '专利', link: '/随笔/patent.html'},
       {
         text: '笔记',
         items: [
