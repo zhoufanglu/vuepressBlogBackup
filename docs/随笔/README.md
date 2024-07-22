@@ -8,16 +8,17 @@ sticky: 5
 ---
 
 
-**2024-07-22**
-- 20:42:41
+**2024-07-22 - 20:42:41**
 - `一只猫，两条狗`
 - 在住的金港路上，偶遇猫猫两次了，这条狗好像也是两次。
 - 然后这是第三次见面，我问朋友`zyd`要了猫粮，过来喂了它，希望今后有时间就来喂喂它。
 - 那它一定很幸福。 希望他将来会给我报恩。
 > 今天的风，吹得很舒服.
 <img src="../.vuepress/public/img/talk-talk/2024/234C329C13FD59EBA6EE8DB53614D7B1.png?raw=true" alt="lfz" width="100%" height="50%">
+<img src="../.vuepress/public/img/talk-talk/2024/IMG_0340.jpg?raw=true" alt="lfz" width="100%" height="50%">
+<img src="../.vuepress/public/img/talk-talk/2024/IMG_0387.jpg?raw=true" alt="lfz" width="100%" height="50%">
 
-[//]: # (<img src="../.vuepress/public/img/talk-talk/2024/IMG_0340.JPG?raw=true" alt="lfz" width="100%" height="50%">)
+[//]: # (<img src="../.vuepress/public/img/talk-talk/2024/IMG_0340.JPG" alt="lfz" width="100%" height="50%">)
 
 **2024-06-19**  
 `春风不度玉兰开，洁白无瑕俏枝头。`  
