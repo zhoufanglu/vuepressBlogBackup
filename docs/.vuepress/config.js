@@ -15,6 +15,14 @@ module.exports = {
     lineNumbers: true // 代码块显示行号
   },
   plugins: [
+    // 支持中文文件名
+    [
+      "permalink-pinyin",
+      {
+        lowercase: true, // Converted into lowercase, default: true
+        separator: "-", // Separator of the slug, default: '-'
+      },
+    ],
     /*[require('./plugins/vuepress-plugin-sakana'), {
       scale: .5
     }],*/
@@ -60,6 +68,7 @@ module.exports = {
       searchMaxSuggestions: 5
     }],
     //彩带
+/*
     ["ribbon-animation", {
       size: 90,   // 默认数据
       opacity: 0.3,  //  透明度
@@ -89,13 +98,14 @@ module.exports = {
       ribbonShow: false, //  点击彩带  true显示  false为不显示
       ribbonAnimationShow: true  // 滑动彩带
     }],
+*/
     // 代码复制弹窗插件
-    ["vuepress-plugin-nuggets-style-copy", {
+/*    ["vuepress-plugin-nuggets-style-copy", {
       copyText: "复制代码",
       tip: {
         content: "复制成功!"
       }
-    }],
+    }],*/
     // 音乐插件
 /*
     ['meting', {
@@ -151,8 +161,8 @@ module.exports = {
     },*/
     //nav,
     nav: [
-      {text: '专利', link: '/随笔/patent.html'},
-      {
+      // {text: '专利', link: '/随笔/patent.html'},
+      /*{
         text: '笔记',
         items: [
           {text: '语言', link: '/语言/'},
@@ -161,13 +171,13 @@ module.exports = {
           {text: 'hexo迁移', link: '/hexo迁移/'},
           {text: '随笔', link: '/随笔/'},
         ],
-      },
+      },*/
       {
         text: '个人主页',
         items: [
-          {text: '掘金', link: 'https://juejin.im/user/5afd39c36fb9a07ac162a318'},
           {text: 'GitHub', link: 'https://github.com/zhoufanglu'},
-          {text: 'hexo', link: 'https://zhoufanglu.github.io/'},
+          {text: '掘金', link: 'https://juejin.im/user/5afd39c36fb9a07ac162a318'},
+          {text: 'previous-blog', link: 'https://zhoufanglu.github.io/'},
         ]
       },
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' }
@@ -225,6 +235,11 @@ module.exports = {
         "title": "Xiaojun Zhou",
         "logo": "https://www.xiaojun.im/avatar.jpg",
         "link": "https://xiaojun.im"
+      },
+      {
+        "title": "YeYuanChuan",
+        "logo": "https://crazystudent13.cn/images/avatar.png",
+        "link": "https://crazystudent13.cn/"
       },
       {
         "title": "申请添加",
