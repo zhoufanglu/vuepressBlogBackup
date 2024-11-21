@@ -7,6 +7,11 @@ sticky: 5
 ## 2024  
 ---
 
+**2024-11-17** 
+-`一去不回，一回不回`
+- 好久没那么开心了， 今天看了`eason`的演唱会。
+- 还坐了东方之门的帆船。
+  <img src="../.vuepress/public/img/talk-talk/2024/eason.png?raw=true" alt="lfz" width="100%" height="50%">
 
 **2024-07-22 - 20:42:41**
 - `一只猫，两条狗`
